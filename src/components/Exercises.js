@@ -7,7 +7,24 @@ import { exerciseOptions, fetchData } from '../utils/fetchData'
 import ExerciseCard from './ExerciseCard'
 
 const Exercises = ({ exercises, setExercises, bodyPart }) => {
- 
+  
+  useEffect(() => {
+    const fetchExercisesData = async () => {
+      let exercisesData = []
+
+      if(bodyPart === 'all'){
+        exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions)
+      }else {
+        exercisesData = await fetchData(`https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`, exerciseOptions)
+      }
+      
+      setExercises(exercisesData)
+    }
+
+    fetchExercisesData()
+  }, [bodyPart])
+
+
   const [currentPage, setCurrentPage] = useState(1)
   const exercisesPerPage = 9
 
@@ -23,6 +40,8 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   }
 
   //console.log(exercises)
+
+  
 
   return (
     <Box id="exercises"
