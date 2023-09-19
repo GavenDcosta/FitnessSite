@@ -24,6 +24,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
     fetchExercisesData()
   }, [bodyPart])
 
+console.log(exercises)
 
   const [currentPage, setCurrentPage] = useState(1)
   const exercisesPerPage = 9
