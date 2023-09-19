@@ -1,4 +1,4 @@
-# Check Deployment [https://gaven-fitness.netlify.app/]
+# [Check Deployment](https://gaven-fitness.netlify.app/)
 
 - Will add many more features to this in the future
 - Will also change the ui in the future
