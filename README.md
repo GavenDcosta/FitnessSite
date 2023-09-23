@@ -1,3 +1,4 @@
+# Note: you wont be able to see anything in the deployment for now, because it has already exceeded the monthy quota of api requests on rapid api
 # [Check Deployment](https://gaven-fitness.netlify.app/)
 
 - Will add many more features to this in the future
