@@ -1,3 +1,13 @@
+# Note: you wont be able to see anything in the deployment for now, because it has already exceeded the monthy quota of api requests on rapid api
+# [Check Deployment](https://gaven-fitness.netlify.app/)
+
+- Will add many more features to this in the future
+- Will also change the ui in the future
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
